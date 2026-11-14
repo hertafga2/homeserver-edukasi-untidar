@@ -1,0 +1,18 @@
+{
+  "title": "Repurposed mini PCs and an ARM set-top box as educational web servers: test script, test application, and raw data",
+  "upload_type": "dataset",
+  "description": "<p>Test script, containerized test application (Nginx, PHP-FPM, MariaDB on Docker), and raw measurements comparing three repurposed devices (a Ryzen mini PC, an Intel mini PC, and an ARM set-top box) as educational web servers over 2.4 GHz Wi-Fi. The data comprise wrk load tests at 10, 25, 50, and 100 concurrent connections for static and dynamic content, sysbench CPU scores, iperf3 throughput, idle-state logs, and wall-power readings at idle, medium, and high load. Code is released under the MIT License and data under CC BY 4.0.</p>",
+  "creators": [
+    {"name": "Arfanindita, Her Tafga", "affiliation": "Universitas Tidar", "orcid": "0000-0001-9332-2452"},
+    {"name": "Husain, Fakhril", "affiliation": "Universitas Tidar"},
+    {"name": "Mardiyah, Siti", "affiliation": "Universitas Tidar"},
+    {"name": "Karini, Nofitasari Damayanti", "affiliation": "Universitas Tidar"},
+    {"name": "Mahardhika, Welly", "affiliation": "Universitas Tidar"},
+    {"name": "Mas'udan, M. Abdillah", "affiliation": "Universitas Tidar"},
+    {"name": "Simarmata, Rifa Hizkia", "affiliation": "Universitas Tidar"}
+  ],
+  "keywords": ["energy efficiency", "performance per watt", "low-power web server", "ARM", "concurrent load testing", "hardware reuse", "tail latency"],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "notes": "Funded by Universitas Tidar, Stimulus Research scheme for Assistant Professors (Penelitian Stimulus Asisten Ahli), DIPA Universitas Tidar 2026, Rector's Decree No. 2076/DST/UN57/PT.01.00/2026."
+}
