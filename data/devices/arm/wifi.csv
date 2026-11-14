@@ -1,0 +1,2 @@
+perangkat,antarmuka,ssid,frekuensi_mhz,sinyal_dbm,laju_tx_mbit,hemat_daya,sumber_sinyal
+arm,wlan0,CAMPUS-WIFI,2412.0,-60,72.2,off,iw

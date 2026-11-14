@@ -1,0 +1,6 @@
+perangkat,throughput_dinamis_c25,daya_idle_w,daya_sedang_w,daya_tinggi_w,rasio_idle_tinggi,kinerja_per_watt,energi_per_permintaan_j,energi_tahunan_idle_kwh,biaya_tahunan_rp,kapasitas_statis,kapasitas_dinamis
+arm,227.24,1.97,4.23,3.09,0.64,53.72,0.0186,17.26,NA,25,NA
+intel,224.31,8.74,12.32,11.51,0.76,18.21,0.0549,76.56,NA,100,100
+ryzen,322.04,24.92,41.35,36.39,0.68,7.79,0.1284,218.30,NA,50,50
+ryzen_pascarestart,NA,20.29,NA,NA,NA,NA,NA,177.74,NA,NA,NA
+ryzen_windows,NA,21.65,NA,NA,NA,NA,NA,189.65,NA,NA,NA

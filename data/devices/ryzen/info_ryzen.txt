@@ -1,0 +1,172 @@
+== Waktu
+2026-11-13T13:05:55+07:00
+== Perangkat
+ryzen
+== uname -a
+Linux ryzen-host 6.18.58.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct 27 00:24:11 UTC 2026 x86_64 GNU/Linux
+== os-release
+PRETTY_NAME="Ubuntu 26.04 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04 (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+== lscpu
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           48 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  8
+On-line CPU(s) list:                     0-7
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD Ryzen 5 PRO 2400GE w/ Radeon Vega Graphics
+CPU family:                              23
+Model:                                   17
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+Socket(s):                               1
+Stepping:                                0
+BogoMIPS:                                6387.81
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr virt_ssbd arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload
+Virtualization:                          AMD-V
+Hypervisor vendor:                       Microsoft
+Virtualization type:                     full
+L1d cache:                               128 KiB (4 instances)
+L1i cache:                               256 KiB (4 instances)
+L2 cache:                                2 MiB (4 instances)
+L3 cache:                                4 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-7
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Mitigation; untrained return thunk; SMT vulnerable
+Vulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+== free -m
+               total        used        free      shared  buff/cache   available
+Mem:           11963        1135       10341           9         664       10828
+Swap:           3072           0        3072
+== lsblk
+NAME   SIZE TYPE ROTA MODEL        MOUNTPOINT
+sda  722.9M disk    1 Virtual Disk 
+sdb   97.4M disk    1 Virtual Disk /usr/src/linux-headers-6.18.58.1-microsoft-standard-WSL2
+sdc      3G disk    1 Virtual Disk [SWAP]
+sdd      1T disk    1 Virtual Disk /mnt/wslg/distro
+== governor CPU
+== antarmuka jaringan (kecepatan tautan)
+br-82c1361ee747 10000 Mb/s
+docker0 -1 Mb/s
+eth0  Mb/s
+eth1 10000 Mb/s
+lo  Mb/s
+loopback0 10000 Mb/s
+veth73f49cc 10000 Mb/s
+vethafa691f 10000 Mb/s
+vethf6612e4 10000 Mb/s
+== kontainer Docker
+(docker tidak dapat diakses; jalankan dengan sudo bila perlu)
+== layanan aktif
+casaos-app-management.service
+casaos-gateway.service
+casaos-local-storage.service
+casaos-message-bus.service
+casaos-user-service.service
+casaos.service
+chrony.service
+containerd.service
+cron.service
+dbus.service
+devmon@devmon.service
+docker.service
+getty@tty1.service
+iperf3.service
+networkd-dispatcher.service
+polkit.service
+rclone.service
+rsyslog.service
+ssh.service
+systemd-journald.service
+systemd-logind.service
+systemd-resolved.service
+systemd-udevd.service
+udisks2.service
+unattended-upgrades.service
+user@1000.service
+== Wi-Fi
+Inter-| sta-|   Quality        |   Discarded packets               | Missed | WE
+ face | tus | link level noise |  nwid  crypt   frag  retry   misc | beacon | 22
+== Windows (WSL terdeteksi)
+Microsoft Windows 11 Pro versi 10.0.26200 build 26200
+-- wsl --version
+WSL version: 3.0.5.0
+Kernel version: 6.18.58.1-1
+WSLg version: 1.0.79
+MSRDC version: 1.2.7391
+Direct3D version: 1.611.1-81528511
+DXCore version: 10.0.26100.1-240331-1435.ge-release
+Windows version: 10.0.26200.9974
+-- skema daya aktif
+Power Scheme GUID: <guid>  (Balanced)-- hemat daya Wi-Fi (AC): off
+-- /etc/wsl.conf
+[boot]
+systemd=true
+
+[user]
+default=user
+-- .wslconfig
+[wsl2]
+networkingMode=mirrored
+memory=12GB
+processors=8
+-- Wi-Fi Windows (netsh)
+
+There is 1 interface on the system: 
+
+    Name                   : Wi-Fi
+    Description            : Intel(R) Wireless-AC 9260 160MHz
+    GUID                   : <guid>
+    Physical address       : xx:xx:xx:xx:xx:xx
+    Interface type         : Primary
+    State                  : connected
+    SSID                   : CAMPUS-WIFI
+    AP BSSID               : xx:xx:xx:xx:xx:xx
+    Band                   : 2.4 GHz
+    Channel                : 6
+    Connected Akm-cipher   : [ akm = 00-0f-ac:02, cipher =  00-0f-ac:04 ]
+    Network type           : Infrastructure
+    Radio type             : 802.11n
+    Authentication         : WPA2-Personal
+    Cipher                 : CCMP
+    Connection mode        : Auto Connect
+    Receive rate (Mbps)    : 144.4
+    Transmit rate (Mbps)   : 144.4
+    Signal                 : 82% 
+    Rssi                   : -55
+    Profile                : CAMPUS-WIFI 
+    QoS MSCS Configured         : 0
+    QoS Map Configured          : 0
+    QoS Map Allowed by Policy   : 0
+
+== uptime
+ 13:05:57 up  2:29,  1 user,  load average: 1.71, 0.75, 0.39

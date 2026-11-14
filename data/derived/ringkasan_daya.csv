@@ -1,0 +1,12 @@
+perangkat,kondisi,n,watt_rata,watt_sd
+arm,idle,30,1.97,0.09
+arm,sedang,30,4.23,0.71
+arm,tinggi,30,3.09,0.07
+intel,idle,30,8.74,0.14
+intel,sedang,30,12.32,0.11
+intel,tinggi,30,11.51,0.11
+ryzen,idle,30,24.92,0.52
+ryzen,sedang,30,41.35,2.32
+ryzen,tinggi,30,36.39,0.31
+ryzen_pascarestart,idle,30,20.29,1.97
+ryzen_windows,idle,30,21.65,0.45

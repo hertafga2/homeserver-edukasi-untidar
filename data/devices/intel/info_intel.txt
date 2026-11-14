@@ -1,0 +1,165 @@
+== Waktu
+2026-11-13T17:02:17+07:00
+== Perangkat
+intel
+== uname -a
+Linux intel 7.0.0-30-generic #30-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 31 18:22:54 UTC 2026 x86_64 GNU/Linux
+== os-release
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04.1 LTS (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+== lscpu
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           36 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  2
+On-line CPU(s) list:                     0,1
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Celeron(R) CPU  N3050  @ 1.60GHz
+CPU family:                              6
+Model:                                   76
+Thread(s) per core:                      1
+Core(s) per socket:                      2
+Socket(s):                               1
+Stepping:                                3
+CPU(s) scaling MHz:                      66%
+CPU max MHz:                             2160.0000
+CPU min MHz:                             480.0000
+BogoMIPS:                                3200.00
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 movbe popcnt tsc_deadline_timer aes rdrand lahf_lm 3dnowprefetch epb pti ibrs ibpb stibp tpr_shadow flexpriority ept vpid tsc_adjust smep erms dtherm ida arat vnmi md_clear
+Virtualization:                          VT-x
+L1d cache:                               48 KiB (2 instances)
+L1i cache:                               64 KiB (2 instances)
+L2 cache:                                2 MiB (2 instances)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0,1
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Meltdown:                  Mitigation; PTI
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Not affected
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+== free -m
+               total        used        free      shared  buff/cache   available
+Mem:            3317        1219         194         184        2353        2097
+Swap:           3828           0        3828
+== lsblk
+NAME                       SIZE TYPE ROTA MODEL            MOUNTPOINT
+loop0                     66.8M loop    0                  /snap/core24/1643
+loop1                     50.1M loop    0                  /snap/snapd/27710
+loop2                      1.5M loop    0                  /snap/hwctl/123
+sda                       55.9G disk    0 Corsair Force LS 
+├─sda1                       1M part    0                  
+├─sda2                       2G part    0                  /boot
+└─sda3                    53.9G part    0                  
+  └─ubuntu--vg-ubuntu--lv 26.9G lvm     0                  /
+== governor CPU
+      2 schedutil
+== antarmuka jaringan (kecepatan tautan)
+br-5a9ab89156da 10000 Mb/s
+docker0 -1 Mb/s
+enp3s0 -1 Mb/s
+lo  Mb/s
+veth0f63b7b 10000 Mb/s
+veth3d5c513 10000 Mb/s
+vethe642e8b 10000 Mb/s
+wlp2s0  Mb/s
+== kontainer Docker
+cloudflared  cloudflare/cloudflared:latest  Up 5 minutes
+ujihomeserver-web-1  nginx:1.27-alpine  Up 7 minutes
+ujihomeserver-php-1  ujihomeserver-php:8.3  Up 7 minutes
+ujihomeserver-db-1  mariadb:11.4  Up 7 minutes (healthy)
+== layanan aktif
+casaos-app-management.service
+casaos-gateway.service
+casaos-local-storage.service
+casaos-message-bus.service
+casaos-user-service.service
+casaos.service
+chrony.service
+containerd.service
+cron.service
+dbus.service
+devmon@devmon.service
+docker.service
+getty@tty1.service
+iperf3.service
+ModemManager.service
+multipathd.service
+netplan-wpa-wlp2s0.service
+networkd-dispatcher.service
+polkit.service
+rclone.service
+rsyslog.service
+smartmontools.service
+smbd.service
+snapd.service
+ssh.service
+systemd-journald.service
+systemd-logind.service
+systemd-networkd.service
+systemd-resolved.service
+systemd-udevd.service
+thermald.service
+udisks2.service
+unattended-upgrades.service
+user@1000.service
+wpa_supplicant.service
+== Wi-Fi
+-- wlp2s0
+Interface wlp2s0
+	ifindex 3
+	wdev 0x1
+	addr xx:xx:xx:xx:xx:xx
+	ssid CAMPUS-WIFI
+	type managed
+	wiphy 0
+	channel 6 (2437 MHz), width: 20 MHz, center1: 2437 MHz
+	txpower 22.00 dBm
+	multicast TXQ:
+		qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+		0	0	0	0	0	0	0	0		0
+Connected to xx:xx:xx:xx:xx:xx (on wlp2s0)
+	SSID: CAMPUS-WIFI
+	freq: 2437.0
+	RX: 428989537 bytes (286720 packets)
+	TX: 13376020 bytes (122319 packets)
+	signal: -48 dBm
+	rx bitrate: 65.0 MBit/s MCS 6 short GI
+	tx bitrate: 72.2 MBit/s MCS 7 short GI
+	bss flags: short-preamble short-slot-time
+	dtim period: 1
+	beacon int: 100
+Power save: off
+global
+country 00: DFS-UNSET
+	(755 - 928 @ 2), (N/A, 20), (N/A), PASSIVE-SCAN
+Inter-| sta-|   Quality        |   Discarded packets               | Missed | WE
+ face | tus | link level noise |  nwid  crypt   frag  retry   misc | beacon | 22
+wlp2s0: 0000   62.  -48.  -256        0      0      0      3    105        0
+== uptime
+ 17:02:18 up 20 min,  2 users,  load average: 0.27, 0.29, 0.40

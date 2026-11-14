@@ -1,0 +1,10 @@
+[12:01:48] Beban sedang: 25 koneksi ke http://<private-ip>:8080/uji.php selama 330 detik
+Running 6m test @ http://<private-ip>:8080/uji.php
+  4 threads and 25 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   155.69ms  252.17ms   3.38s    93.28%
+    Req/Sec    63.44     15.00   111.00     75.11%
+  67509 requests in 5.50m, 239.11MB read
+  Socket errors: connect 0, read 0, write 0, timeout 24
+Requests/sec:    204.52
+Transfer/sec:    741.79KB

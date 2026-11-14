@@ -1,0 +1,153 @@
+== Waktu
+2026-11-14T10:34:48+07:00
+== Perangkat
+arm
+== uname -a
+Linux armbian 5.15.195-ophub #1 SMP PREEMPT Fri Oct 24 10:43:29 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+== os-release
+PRETTY_NAME="Armbian OS 25.11.0 noble"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.armbian.com"
+SUPPORT_URL="https://forum.armbian.com"
+BUG_REPORT_URL="https://www.armbian.com/bugs"
+PRIVACY_POLICY_URL="https://www.armbian.com"
+UBUNTU_CODENAME=noble
+LOGO="armbian-logo"
+ARMBIAN_PRETTY_NAME="Armbian OS 25.11.0 noble"
+== lscpu
+Architecture:                            aarch64
+CPU op-mode(s):                          32-bit, 64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Vendor ID:                               ARM
+Model name:                              Cortex-A53
+Model:                                   4
+Thread(s) per core:                      1
+Core(s) per cluster:                     4
+Socket(s):                               -
+Cluster(s):                              1
+Stepping:                                r0p4
+CPU(s) scaling MHz:                      79%
+CPU max MHz:                             1512.0000
+CPU min MHz:                             100.0000
+BogoMIPS:                                48.00
+Flags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Not affected
+Vulnerability Spectre v1:                Mitigation; __user pointer sanitization
+Vulnerability Spectre v2:                Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+== free -m
+               total        used        free      shared  buff/cache   available
+Mem:            1800         539         612          11         739        1261
+Swap:            900           0         900
+== lsblk
+NAME           SIZE TYPE ROTA MODEL MOUNTPOINT
+mmcblk1        7.4G disk    0       
+├─mmcblk1p1    511M part    0       /boot
+└─mmcblk1p2    6.9G part    0       /
+mmcblk2        7.3G disk    0       
+mmcblk2boot0     4M disk    0       
+mmcblk2boot1     4M disk    0       
+zram0        900.5M disk    0       [SWAP]
+zram1           50M disk    0       /var/log
+zram2            0B disk    0       
+== governor CPU
+      4 schedutil
+== antarmuka jaringan (kecepatan tautan)
+br-2ad6099ae2b2 10000 Mb/s
+docker0 -1 Mb/s
+eth0 -1 Mb/s
+ip6tnl0  Mb/s
+lo  Mb/s
+sit0  Mb/s
+veth4c71944 10000 Mb/s
+vetha6895d9 10000 Mb/s
+vethdd4cde0 10000 Mb/s
+wlan0  Mb/s
+== kontainer Docker
+cloudflared  cloudflare/cloudflared:latest  Up 11 minutes
+ujihomeserver-web-1  nginx:1.27-alpine  Up 11 minutes
+ujihomeserver-php-1  ujihomeserver-php:8.3  Up 11 minutes
+ujihomeserver-db-1  mariadb:11.4  Up 11 minutes (healthy)
+== layanan aktif
+casaos-app-management.service
+casaos-gateway.service
+casaos-local-storage.service
+casaos-message-bus.service
+casaos-user-service.service
+casaos.service
+chrony.service
+containerd.service
+cron.service
+dbus.service
+devmon@devmon.service
+docker.service
+getty@tty1.service
+iperf3.service
+NetworkManager.service
+nmbd.service
+rclone.service
+rng-tools-debian.service
+rpcbind.service
+rsyslog.service
+serial-getty@ttyAML0.service
+smbd.service
+ssh.service
+systemd-journald.service
+systemd-logind.service
+systemd-resolved.service
+systemd-udevd.service
+unattended-upgrades.service
+user@0.service
+vnstat.service
+wpa_supplicant.service
+== Wi-Fi
+-- wlan0
+Interface wlan0
+	ifindex 5
+	wdev 0x1
+	addr xx:xx:xx:xx:xx:xx
+	ssid CAMPUS-WIFI
+	type managed
+	wiphy 0
+	channel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz
+	txpower 20.00 dBm
+Connected to xx:xx:xx:xx:xx:xx (on wlan0)
+	SSID: CAMPUS-WIFI
+	freq: 2412.0
+	RX: 3201102 bytes (13593 packets)
+	TX: 236636 bytes (1925 packets)
+	signal: -52 dBm
+	rx bitrate: 52.0 MBit/s MCS 5
+	tx bitrate: 72.2 MBit/s MCS 7 short GI
+	bss flags: short-slot-time
+	dtim period: 2
+	beacon int: 100
+Power save: off
+global
+country 00: DFS-UNSET
+	(755 - 928 @ 2), (N/A, 20), (N/A), PASSIVE-SCAN
+Inter-| sta-|   Quality        |   Discarded packets               | Missed | WE
+ face | tus | link level noise |  nwid  crypt   frag  retry   misc | beacon | 22
+ wlan0: 0000   60.  -50.  -256        0      0      0      5     69        0
+== uptime
+ 10:34:49 up 12 min,  1 user,  load average: 0.23, 0.23, 0.26

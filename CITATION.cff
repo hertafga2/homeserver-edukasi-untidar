@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this script or data, please cite the article and this repository."
+title: "Repurposed mini PCs and an ARM set-top box as educational web servers: test script, test application, and raw data"
+type: dataset
+version: 1.0.0
+date-released: 2026-11-14
+license:
+  - MIT
+  - CC-BY-4.0
+authors:
+  - family-names: Arfanindita
+    given-names: Her Tafga
+    affiliation: "Universitas Tidar, Indonesia"
+    orcid: "https://orcid.org/0000-0001-9332-2452"
+    email: hertafga@untidar.ac.id
+  - family-names: Husain
+    given-names: Fakhril
+    affiliation: "Universitas Tidar, Indonesia"
+  - family-names: Mardiyah
+    given-names: Siti
+    affiliation: "Universitas Tidar, Indonesia"
+  - family-names: Karini
+    given-names: Nofitasari Damayanti
+    affiliation: "Universitas Tidar, Indonesia"
+  - family-names: Mahardhika
+    given-names: Welly
+    affiliation: "Universitas Tidar, Indonesia"
+  - family-names: "Mas'udan"
+    given-names: M. Abdillah
+    affiliation: "Universitas Tidar, Indonesia"
+  - family-names: Simarmata
+    given-names: Rifa Hizkia
+    affiliation: "Universitas Tidar, Indonesia"
+keywords:
+  - energy efficiency
+  - performance per watt
+  - low-power web server
+  - ARM
+  - concurrent load testing
+  - hardware reuse
+  - tail latency
+abstract: >-
+  Test script, containerized test application (Nginx, PHP-FPM, MariaDB), and raw
+  measurements comparing three repurposed devices (Ryzen and Intel mini PCs and an
+  ARM set-top box) as educational web servers: wrk load tests at 10-100 concurrent
+  connections for static and dynamic content, sysbench, iperf3, and wall-power
+  readings at idle, medium, and high load.

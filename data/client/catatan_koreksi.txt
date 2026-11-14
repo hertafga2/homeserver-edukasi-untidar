@@ -1,0 +1,1 @@
+2026-11-13T17:30:46+07:00 koreksi salah ketik intel sedang: detik 50 tercatat 112.6 -> 12.5; detik 200 dipastikan 12.4 (dikonfirmasi peneliti dari wattmeter)

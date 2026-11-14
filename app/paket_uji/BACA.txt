@@ -1,0 +1,23 @@
+PAKET APLIKASI UJI - HOME SERVER EDUKASI
+=========================================
+Dipasang sama persis di mini PC Ryzen (Ubuntu di WSL2), Intel, dan ARM.
+
+Isi
+  docker-compose.yml   Nginx 1.27 + PHP-FPM 8.3 dari paket Alpine 3.23 (mysqli, opcache) + MariaDB 11.4
+  html/index.html      halaman statis   -> http://IP:8080/
+  html/uji.php         halaman dinamis  -> http://IP:8080/uji.php (1.000 baris data)
+  db/buat_db.sql       basis data uji (dibuat otomatis saat pertama kali dijalankan)
+  nginx/default.conf   konfigurasi web (log akses dimatikan)
+  php/Dockerfile       image PHP dari paket Alpine, tanpa kompilasi
+
+Menjalankan (di dalam folder paket_uji)
+  sudo docker compose up -d --build
+  sudo docker compose ps
+  curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/
+  curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/uji.php
+  -> keduanya harus 200. Pemanggilan pertama bisa 502 selama 1-2 menit
+     sampai MariaDB selesai menyiapkan data.
+
+Menghentikan / mengulang dari awal
+  sudo docker compose down          (data tetap)
+  sudo docker compose down -v       (data dihapus, dibuat ulang saat up)

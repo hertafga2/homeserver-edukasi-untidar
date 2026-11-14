@@ -1,0 +1,8 @@
+perangkat,antarmuka,ssid,frekuensi_mhz,sinyal_dbm,laju_tx_mbit,hemat_daya,sumber_sinyal
+ryzen,windows,CAMPUS-WIFI,2437,-53,144.4,off,windows_rssi
+ryzen,windows,CAMPUS-WIFI,2437,-53,130,off,windows_rssi
+ryzen,windows,CAMPUS-WIFI,2437,-53,144.4,off,windows_rssi
+ryzen,windows,CAMPUS-WIFI,2437,-54,144.4,off,windows_rssi
+ryzen,windows,CAMPUS-WIFI,2437,-55,72.2,off,windows_rssi
+ryzen,windows,CAMPUS-WIFI,2437,-53,130,off,windows_rssi
+ryzen,windows,CAMPUS-WIFI,2437,-55,144.4,off,windows_rssi

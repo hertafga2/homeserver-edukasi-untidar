@@ -1,0 +1,15 @@
+Sat Nov 14 10:18:53 AM WIB 2026
+5.15.195-ophub
+PRETTY_NAME="Armbian OS 25.11.0 noble"
+ARMBIAN_PRETTY_NAME="Armbian OS 25.11.0 noble"
+Docker version 29.6.2, build dfc4efb
+Docker Compose version v5.3.1
+CasaOS: active v0.4.15
+OCI runtime exec failed: exec failed: unable to start container process: exec: "php": executable file not found in $PATH
+mariadbd  Ver 11.4.13-MariaDB-ubu2404 for debian-linux-gnu on aarch64 (mariadb.org binary distribution)
+nginx version: nginx/1.27.5
+cloudflared version 2026.11.0 (built 2026-11-12-12:29 UTC)
+iperf 3.16 (cJSON 1.7.15)
+sysbench 1.0.20
+PHP 8.3.36 (fpm-fcgi) (built: Oct 22 2026 08:03:19)
+PHP 8.3.36 (fpm-fcgi) (built: Oct 22 2026 08:03:19)
